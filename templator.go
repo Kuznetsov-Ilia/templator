@@ -9,7 +9,7 @@ import (
 // Templator produces html
 // tPath - template path
 // jData - json data
-func Templator(tPath string, jData map[string]interface{}) (string, error) {
+func Templator(tPath *string, jData map[string]interface{}) (string, error) {
 	//fmt.Println("tPath: " + tPath + " jData: " + jData
 
 	htmlFile, err := ioutil.ReadFile(tPath)
